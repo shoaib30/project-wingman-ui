@@ -1,0 +1,27 @@
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<dom-module id="main-app">
+    </style>
+    <template>
+        <iron-ajax auto url="/test" "
+            handle-as="json"
+            on-response="handleResponse"
+            last-response="{{ajaxData}}"
+            debounce-duration="300 "></iron-ajax>
+            <h1> Name: {{ajaxData.name}}</h1>
+             <template is="dom-repeat" items="{{ajaxData.list}}">
+          Item: [[item]]<br/>
+        </template>
+
+    </template>
+    <script>
+        Polymer({
+            is: "main-app",
+            handleResponse: function()  {
+                console.log(this.ajaxData)
+            },
+            ready: function()   {
+                console.log("Main ready")
+            }
+        })
+    </script>
+</dom-module>
