@@ -1,0 +1,21 @@
+{
+  "name": "project-wingman-ui",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Tazeen <tazeenmunnavar33@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.8.1"
+  }
+}
