@@ -1,0 +1,28 @@
+<link rel="import" href="bower_components/components/paper-toolbar/paper-toolbar.html">
+<dom-module id="home-app">
+   <template>
+       
+          <style is="custom-style">
+     body {
+       margin: 0;
+     }
+        body {
+                background-color: #2a363b;
+            }
+        paper-toolbar {
+            --paper-toolbar-background: #e8485f;
+            margin: 0;
+        }
+    </style>
+       <import src="index.html"/>
+       <paper-toolbar class="medium">
+        <div class="title">Title</div>
+    </paper-toolbar>
+   </template>
+   
+   <script>
+       Polymer({
+           is: 'home-app',
+       });
+   </script>
+</dom-module>
