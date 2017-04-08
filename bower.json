@@ -16,8 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.8.1",
-    "app-layout": "PolymerElements/app-layout#^0.10.7",
-    "iron-elements": "PolymerElements/iron-elements#^1.0.10"
+    "polymer": "Polymer/polymer#^1.8.1"
   }
 }
