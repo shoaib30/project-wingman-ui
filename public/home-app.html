@@ -1,28 +1,78 @@
 <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
+<!--<link rel="import" href="bower_components/login-form/login-form/login-form.html">-->
+
 <dom-module id="home-app">
-   <template>
-       
-          <style is="custom-style">
-     body {
+
+   <template >
+     <style is="custom-style">
+       body {
        margin: 0;
      }
-        body {
-                background-color: #2a363b;
-            }
+       
         paper-toolbar {
             --paper-toolbar-background: #e8485f;
             margin: 0;
         }
+        paper-tab[link] a {
+          background: #e8485f;
+          width: 100%;
+        
+        }
+        paper-button {
+
+        }
+
     </style>
-       <import src="index.html"/>
-       <paper-toolbar class="medium">
-        <div class="title">Title</div>
-    </paper-toolbar>
+<import src="bower_components/login-form/login-form/login-form.html"/>       
+   
+
+<import src="index.html"/>
+<paper-toolbar class="medium">
+<div class="title">PWM</div>
+
+
+<paper-button  id="HOME" link="" on-tap="goLink">HOME</paper-button>
+<paper-button  id="About US" link="" on-tap="goLink">ABOUT US</paper-button>
+<paper-button  id="CONTACT" link="loginpage.html" on-tap="goLink">CONTACT</paper-button>
+<paper-button raised id="login" link="loginpage.html" on-tap="goLink">Login</paper-button>
+
+</paper-toolbar>
+
+
+<!--<paper-tabs selected="0">
+  <paper-tab link>
+    <a href="#item1" tabindex="-1">ITEM ONE</a>
+  </paper-tab>
+  <paper-tab link>
+    <a href="#item2" tabindex="-1">ITEM TWO</a>
+  </paper-tab>
+  <paper-tab link>
+    <a href="#item3" tabindex="-1">ITEM THREE</a>
+  </paper-tab>
+  <paper-tab link>
+    <a href="#item4" tabindex="-1">ITEM THREE</a>
+  </paper-tab>
+</paper-tabs>-->
+
+
    </template>
    
-   <script>
+   <!--<script>
        Polymer({
            is: 'home-app',
        });
-   </script>
+   </script>-->
+
+   <script>
+    
+    Polymer({
+        is: "home-app",
+        goLink: function(e){
+          window.location.href=e.target.getAttribute('link');
+        }
+        });
+  
+      
+</script>>
 </dom-module>

@@ -1,3 +1,4 @@
+
 <link rel="import" href="bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
 <link rel="import" href="bower_components/app-layout/app-drawer/app-drawer.html">
 <link rel="import" href="bower_components/app-layout/app-header/app-header.html">
@@ -11,6 +12,7 @@
 <link rel="import" href="bower_components/paper-menu/paper-menu.html">
 <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
 <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+
 
 <dom-module id="navbar-app">
 
@@ -29,7 +31,8 @@
       paper-tabs {
         --paper-tabs-selection-bar-color: black;
         height: 100%;
-        max-width: 640px;
+        width: 900%;
+        max-width: 10000px;
       }
       paper-tab {
         --paper-tab-ink: #aaa;
@@ -99,7 +102,7 @@
         items: {
           type: Array,
           value: function() {
-            return ['HOME', 'LOGIN', 'ABOUT_US', 'CONTACT_US', 'BLAH'];
+            return ['HOME', 'LOGIN', 'ABOUT_US', 'CONTACT_US'];
           }
         }
       },
