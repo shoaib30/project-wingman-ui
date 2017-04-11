@@ -1,8 +1,8 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <polymer-element name="login-form" attributes="email email_placeholder password password_min_length handler failed">
-    
+     
     <template>
-
+			<import src="../../home-app.html"/>
 
     	<link rel="stylesheet" href="css/login-form.css">
     	<app-toolbar></app-toolbar>
@@ -21,8 +21,9 @@
 		      <input type="password" name="password"  id="password">
 		      <div class="status" id="password_status"></div>
 		    </fieldset>
-		 
+			 <a href="../../register.html" target="" >Don't have an account? Register !</a> 
 		    <fieldset>
+
 		    	<input type="submit" id="submit" value="submit">
 			</fieldset>
 		</form>

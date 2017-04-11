@@ -53,11 +53,11 @@
 
           <app-toolbar class="tabs-bar" hidden$="{{!wideLayout}}">
             <!-- Nav on desktop: tabs -->
-            <paper-tabs selected="{{selected}}" attr-for-selected="name">
+           <!-- <paper-tabs selected="{{selected}}" attr-for-selected="name" >
               <template is="dom-repeat" items="{{items}}">
-                <paper-tab name$="{{item}}">{{item}}</paper-tab>
+                <paper-tab id="it" name$="{{item}}" > {{item}}</paper-tab>
               </template>
-            </paper-tabs>
+            </paper-tabs>-->
           </app-toolbar>
 
         </app-header>
@@ -79,6 +79,10 @@
           type: String,
           value: 'HOME'
         },
+      
+        
+
+
         wideLayout: {
           type: Boolean,
           value: false,
