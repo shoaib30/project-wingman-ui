@@ -57,6 +57,11 @@ form fieldset input[type='email'], form fieldset input[type='password'] {
 	font-size: 2em;
 
 }
+google-signin#googlebutton {
+	
+	margin-left: 30%;
+	margin-top: 4%
+}
 
 form fieldset input[type="submit"] {
 	background-color: #e8485f;

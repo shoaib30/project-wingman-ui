@@ -1,8 +1,9 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <polymer-element name="login-form" attributes="email email_placeholder password password_min_length handler failed">
-     
+     <link rel="import" href="../../bower_components/google-signin/google-signin.html">
+
     <template>
-			<import src="../../home-app.html"/>
+			<!-- <import src="../../home-app.html"/> -->
 
     	<link rel="stylesheet" href="css/login-form.css">
     	<app-toolbar></app-toolbar>
@@ -25,8 +26,17 @@
 		    <fieldset>
 
 		    	<input type="submit" id="submit" value="submit">
-			</fieldset>
+			</fieldset><br>
+
+
+
+		<google-signin id="googlebutton" client-id="1026296822526-uhtk8k1e6jbfd6kp7vvefe7jd9h9e1lm.apps.googleusercontent.com" scopes="https://www.googleapis.com/auth/drive"></google-signin>
+			
+
+
 		</form>
+
+			
     </template>
     <script type="text/javascript" src="js/login-form.js"></script>
 </polymer-element>
