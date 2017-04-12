@@ -1,114 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	  <title>Test</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="bower_components/polymer/polymer.html">
-    <link rel="import" href="bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+  <title>Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="bower_components/polymer/polymer.html">
+  <link rel="import" href="bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+  <link rel="import" href="bower_components/app-layout/app-drawer/app-drawer.html">
+  <link rel="import" href="bower_components/app-layout/app-header/app-header.html">
+  <link rel="import" href="bower_components/app-layout/app-header-layout/app-header-layout.html">
+  <link rel="import" href="bower_components/app-layout/app-toolbar/app-toolbar.html">
+  <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html">
+  <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+  <link rel="import" href="bower_components/iron-media-query/iron-media-query.html">
+  <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+  <link rel="import" href="bower_components/paper-item/paper-item.html">
+  <link rel="import" href="bower_components/paper-menu/paper-menu.html">
+  <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+  <link rel="import" href="bower_components/polymer/polymer.html">
 
-<link rel="import" href="bower_components/app-layout/app-drawer/app-drawer.html">
-<link rel="import" href="bower_components/app-layout/app-header/app-header.html">
-<link rel="import" href="bower_components/app-layout/app-header-layout/app-header-layout.html">
-<link rel="import" href="bower_components/app-layout/app-toolbar/app-toolbar.html">
-<link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html">
-<link rel="import" href="bower_components/iron-icons/iron-icons.html">
-<link rel="import" href="bower_components/iron-media-query/iron-media-query.html">
-<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
-<link rel="import" href="bower_components/paper-item/paper-item.html">
-<link rel="import" href="bower_components/paper-menu/paper-menu.html">
-<link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
- <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
-<link rel="import" href="bower_components/polymer/polymer.html">
- 
-<link rel="import" href="home-app.html">
+  <link rel="import" href="home-app.html">
 
-<link rel="import" href="bower_components/iron-form/iron-form.html">
-<link rel="import" href="bower_components/paper-button/paper-button.html">
-<link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
-<link rel="import" href="bower_components/paper-input/paper-input.html">
-<link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
-<link rel="import" href="bower_components/paper-date-picker-item/paper-date-picker-item.html">
+  <link rel="import" href="bower_components/iron-form/iron-form.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+  <link rel="import" href="bower_components/paper-date-picker-item/paper-date-picker-item.html">
 
-    <style>
-        body {
-            background: #2a363b;
-        }
-        form {
-        	
-     margin-left: 30%;
-     margin-top: 5%;
-	width: 40%;
-	height: 50%;
-	border: solid thin #e8485f;
-	padding: 15px;
-	border-radius: 6px;
-	box-shadow: 0px 0 10px #e8485f;
-}
-paper-input#name {
-	color: #e8485f;
-	font-size: 2em;
-
-}
-
-paper-button#submitbutton  {
-	background-color: #e8485f;
-	padding: 10px;
-	width: 30%;
-	margin-left:35%;
-	margin-right: 90px;
-	margin-top: 40px;
-	text-align: center;
-	border-radius: 5px;
-	color: #ffffff;
-	text-decoration: none;
-	border: none;
-	cursor: pointer;
-}
-
-     </style>
+  <style>
+    body {
+      background: #2a363b;
+    }
+    
+    form {
+      margin-left: 30%;
+      margin-top: 5%;
+      width: 40%;
+      height: 50%;
+      border: solid thin #e8485f;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0px 0 10px #e8485f;
+    }
+    
+    paper-input#name {
+      color: #e8485f;
+      font-size: 2em;
+    }
+    
+    paper-button#submitbutton {
+      background-color: #e8485f;
+      padding: 10px;
+      width: 30%;
+      margin-left: 35%;
+      margin-right: 90px;
+      margin-top: 40px;
+      text-align: center;
+      border-radius: 5px;
+      color: #ffffff;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 
 <body unresolved>
-<home-app></home-app>
+  <home-app></home-app>
 
- <form is="iron-form" id="registerform">
-  <paper-input id="name" name="name"  label="Name" required></paper-input>
-   <paper-date-picker-item icon="icons:today" date="{{date}}" date-format="ll"></paper-date-picker-item>
-   <paper-dropdown-menu name="gender" label="Gender">
-   <paper-listbox class="dropdown-content" selected="1">
-    <paper-item>Female</paper-item>
-    <paper-item>Male</paper-item>
-    <paper-item>Other</paper-item>
-  </paper-listbox>
-  </paper-dropdown-menu>
-     <paper-input name="country" label="Country" required></paper-input>
-     <paper-input name="Contact" label="Contact Number" required></paper-input>
- <paper-input name="Email-id" label="Email-id" required></paper-input>
-  <paper-input name="password" label="Password" type="password" required></paper-input>
-  <paper-input name="confirmpassword" label="Confirm-Password" type="password" required></paper-input>
-  <paper-checkbox name="read" required>I Agree with the terms and condition</paper-checkbox><br>
+  <form is="iron-form" id="registerform">
+    <paper-input id="name" name="name" label="Name" required></paper-input>
+    <paper-date-picker-item icon="icons:today" date="{{date}}" date-format="ll"></paper-date-picker-item>
+    <paper-dropdown-menu name="gender" label="Gender">
+      <paper-listbox class="dropdown-content" selected="1">
+        <paper-item>Female</paper-item>
+        <paper-item>Male</paper-item>
+        <paper-item>Other</paper-item>
+      </paper-listbox>
+    </paper-dropdown-menu>
+    <paper-input name="country" label="Country" required></paper-input>
+    <paper-input name="Contact" label="Contact Number" required></paper-input>
+    <paper-input name="Email-id" label="Email-id" required></paper-input>
+    <paper-input name="password" label="Password" type="password" required></paper-input>
+    <paper-input name="confirmpassword" label="Confirm-Password" type="password" required></paper-input>
+    <paper-checkbox name="read" required>I Agree with the terms and condition</paper-checkbox><br>
 
-  <paper-button  raised onclick="_nativeSubmit(event) " id="submitbutton">Submit</paper-button><br>
-
-
-
-
-
-
-</form>
-
-
-
-
-
+    <paper-button raised onclick="_nativeSubmit(event) " id="submitbutton">Submit</paper-button><br>
+  </form>
 </body>
 <script type="text/javascript">
-	function _nativeSubmit(event) {
+  function _nativeSubmit(event) {
     if (redirectDemo.validate()) {
       // For each element the iron-form wants to submit, create a hidden
       // input in the submission form.
@@ -123,7 +111,7 @@ paper-button#submitbutton  {
       nativeForm.submit();
     }
   }
-  
-      
+
 </script>
+
 </html>
