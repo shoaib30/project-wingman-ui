@@ -25,7 +25,7 @@
   <link rel="import" href="bower_components/polymer/polymer.html">
 
   <link rel="import" href="home-app.html">
-
+  <link rel="import" href="bower_components/google-signin/google-signin.html">
   <link rel="import" href="bower_components/iron-form/iron-form.html">
   <link rel="import" href="bower_components/paper-button/paper-button.html">
   <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
@@ -93,6 +93,7 @@
     <paper-checkbox name="read" required>I Agree with the terms and condition</paper-checkbox><br>
 
     <paper-button raised onclick="_nativeSubmit(event) " id="submitbutton">Submit</paper-button><br>
+    <google-signin></google-signin>
   </form>
 </body>
 <script type="text/javascript">

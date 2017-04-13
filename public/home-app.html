@@ -4,56 +4,48 @@
 
 <dom-module id="home-app">
 
-   <template >
-     <style is="custom-style">
-       body {
-       margin: 0;
-     }
-       
-        paper-toolbar {
-            --paper-toolbar-background: #e8485f;
-            margin: 0;
-        }
-        paper-tab[link] a {
-          background: #e8485f;
-          width: 100%;
-        
-        }
-        paper-button {
-        }
-    </style>
-<import src="login-form/login-form/login-form.html"/>       
-   
-
-<import src="index.html"/>
-<paper-toolbar class="medium">
-<div class="title">PWM</div>
-
-
-<paper-button  id="HOME" link="index.html" on-tap="goLink">HOME</paper-button>
-<paper-button  id="About US" link="about.html" on-tap="goLink">ABOUT US</paper-button>
-<paper-button  id="CONTACT" link="Contact.html" on-tap="goLink">CONTACT</paper-button>
-<paper-button  id="CONTACT" link="FAQs.html" on-tap="goLink">FAQs</paper-button>
-<paper-button  id="CONTACT" link="Careers.html" on-tap="goLink">CAREERS</paper-button>
-<paper-button raised id="login" link="loginpage.html" on-tap="goLink">LOGIN</paper-button>
-
-</paper-toolbar>
-
-
-
-   </template>
-   
-  
-
-   <script>
-    
-    Polymer({
-        is: "home-app",
-        goLink: function(e){
-          window.location.href=e.target.getAttribute('link');
-        }
-        });
-  
+  <template>
+    <style is="custom-style">
+      body {
+        margin: 0;
+      }
       
-</script>>
+      paper-toolbar {
+        --paper-toolbar-background: #e8485f;
+        margin: 0;
+      }
+      
+      paper-tab[link] a {
+        background: #e8485f;
+        width: 100%;
+      }
+    </style>
+    <import src="login-form/login-form/login-form.html" />
+    <import src="index.html" />
+    <paper-toolbar class="medium">
+      <div class="title">PWM</div>
+      <paper-button id="HOME" link="index.html" on-tap="goLink">HOME</paper-button>
+      <paper-button id="About US" link="about.html" on-tap="goLink">ABOUT US</paper-button>
+      <paper-button id="CONTACT" link="Contact.html" on-tap="goLink">CONTACT</paper-button>
+      <paper-button id="CONTACT" link="FAQs.html" on-tap="goLink">FAQs</paper-button>
+      <paper-button id="CONTACT" link="Careers.html" on-tap="goLink">CAREERS</paper-button>
+      <paper-button raised id="login" link="loginpage.html" on-tap="goLink">LOGIN</paper-button>
+
+    </paper-toolbar>
+
+
+
+  </template>
+
+
+
+  <script>
+    Polymer({
+      is: "home-app",
+      goLink: function (e) {
+        window.location.href = e.target.getAttribute('link');
+      }
+    });
+
+  </script>>
 </dom-module>

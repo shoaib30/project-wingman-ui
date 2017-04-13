@@ -11,38 +11,54 @@
     <link rel="import" href="bower_components/polymer/polymer.html">
     <link rel="import" href="home-app.html">
     <link rel="import" href="navbar-app.html">
-   
-    
-     <link rel="import" href="main-app/main-app.html" />
-   <link rel="import" href="bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
 
-<link rel="import" href="bower_components/app-layout/app-drawer/app-drawer.html">
-<link rel="import" href="bower_components/app-layout/app-header/app-header.html">
-<link rel="import" href="bower_components/app-layout/app-header-layout/app-header-layout.html">
-<link rel="import" href="bower_components/app-layout/app-toolbar/app-toolbar.html">
-<link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html">
-<link rel="import" href="bower_components/iron-icons/iron-icons.html">
-<link rel="import" href="bower_components/iron-media-query/iron-media-query.html">
-<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
-<link rel="import" href="bower_components/paper-item/paper-item.html">
-<link rel="import" href="bower_components/paper-menu/paper-menu.html">
-<link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
- <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
-<link rel="import" href="bower_components/polymer/polymer.html">
-   
+
+    <link rel="import" href="main-app/main-app.html" />
+    <link rel="import" href="bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+
+    <link rel="import" href="bower_components/app-layout/app-drawer/app-drawer.html">
+    <link rel="import" href="bower_components/app-layout/app-header/app-header.html">
+    <link rel="import" href="bower_components/app-layout/app-header-layout/app-header-layout.html">
+    <link rel="import" href="bower_components/app-layout/app-toolbar/app-toolbar.html">
+    <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html">
+    <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="bower_components/iron-media-query/iron-media-query.html">
+    <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="bower_components/paper-item/paper-item.html">
+    <link rel="import" href="bower_components/paper-menu/paper-menu.html">
+    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="bower_components/paper-carousel/paper-carousel.html">
+
     <style>
         body {
             background: #2a363b;
         }
-     </style>
+        
+        paper-carousel#slider {
+            width: 96%;
+            height: 60%;
+            margin-left: 2%;
+            margin-right: 2%;
+          
+                   }
+    </style>
 </head>
 
 
 <body unresolved>
 
-<home-app></home-app>
+    <home-app></home-app>
+   
+ <paper-carousel items="1" dotText="false" id="slider">
+        <img src="https://unsplash.it/800/500/?image=257" draggable="false" />
+        <img src="https://unsplash.it/800/500/?image=250" draggable="false" />
+        <img src="https://unsplash.it/800/500/?image=399" draggable="false" />
+        <img src="https://unsplash.it/800/500/?image=146" draggable="false" />
+        <img src="https://unsplash.it/800/500/?image=248" draggable="false" />
+    </paper-carousel>
 
- 
 
 </body>
 
