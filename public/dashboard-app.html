@@ -10,6 +10,7 @@
 <link rel="import" href="bower_components/paper-menu/paper-menu.html">
 <link rel="import" href="bower_components/paper-item/paper-item.html">
 <link rel="import" href="bower_components/paper-card/paper-card.html">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
 
 <dom-module id="dashboard-app">
 
@@ -59,9 +60,9 @@
 
 
 
-  <paper-card image="demo/donuts.png">
+  <!--<paper-card image="bower_components/paper-card/demo/donuts.png">
   <div class="card-content">
-    <div class="cafe-header">Cafe Basilico
+    <div class="cafe-header">I am a Sender
       <div class="cafe-location cafe-light">
         <iron-icon icon="communication:location-on"></iron-icon>
         <span>250ft</span>
@@ -85,6 +86,27 @@
       <paper-button>9:00PM</paper-button>
       <paper-button class="cafe-reserve">Reserve</paper-button>
     </div>
+  </div>
+</paper-card>-->
+
+<paper-card heading="I am a Sender" image="bower_components/paper-card/demo/donuts.png" alt="Sender">
+  <div class="card-content">Do you want to send something to a friend or a relative living in another city?</div>
+  <div class="card-actions">
+    <paper-button raised>Click here!</paper-button>
+  </div>
+</paper-card>
+
+<paper-card heading="I am a Traveller" image="bower_components/paper-card/demo/travel.png" alt="Traveller">
+  <div class="card-content"></div>
+  <div class="card-actions">
+    <paper-button raised>Click here!</paper-button>
+  </div>
+</paper-card>
+
+<paper-card heading="Trip History" image="bower_components/paper-card/demo/trip.png" alt="History">
+  <div class="card-content"></div>
+  <div class="card-actions">
+    <paper-button raised>Click here!</paper-button>
   </div>
 </paper-card>
   </template>
