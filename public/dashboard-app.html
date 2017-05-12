@@ -11,6 +11,7 @@
 <link rel="import" href="bower_components/paper-item/paper-item.html">
 <link rel="import" href="bower_components/paper-card/paper-card.html">
 <link rel="import" href="bower_components/paper-button/paper-button.html">
+<link rel="import" href="bower_components/iron-image/iron-image.html">
 
 <dom-module id="dashboard-app">
 
@@ -55,6 +56,16 @@
   paper-card heading{
 
   }
+  #drawer {
+    z-index: 99;
+  }
+   #example-sizing-cover {
+    margin-top: 40%;
+    width: 100%;
+    height: 30%;
+    background: #ddd;
+    --iron-image-width: 100%;
+  }
     </style>
 
 
@@ -68,8 +79,8 @@
   </app-toolbar>
 </app-header>
 <app-drawer id="drawer" swipe-open>
-<!-- <paper-item><paper-card  image="bower_components/paper-card/demo/travel.jpg" alt="Sender"></paper-card></paper-item> -->
-  <paper-menu selected="0" style="margin-top:95%;">
+<paper-item><iron-image alt="The Polymer logo." id="example-sizing-cover" src="bower_components/paper-card/demo/travel2.jpg"></iron-image> </paper-item>
+  <paper-menu selected="0" style="margin-top:15%;">
     <paper-item>I am a Sender</paper-item>
     <paper-item>I am a Traveller</paper-item>
     <paper-item>Trip History</paper-item>
@@ -83,40 +94,13 @@
       <paper-button id="About US" link="about.html" on-tap="goLink">ABOUT US</paper-button>
       <paper-button id="CONTACT" link="Contact.html" on-tap="goLink">CONTACT</paper-button>
       <paper-button id="FAQ" link="FAQs.html" on-tap="goLink">FAQs</paper-button>
-      <paper-button id="CAREERS" link="Careers.html" on-tap="goLink">CAREERS</paper-button>
+      <paper-button id="logout" link="Careers.html" on-tap="goLink">Logout</paper-button>
       <!--<paper-button raised id="login" link="loginpage.html" on-tap="goLink">LOGIN</paper-button>-->
   </paper-toolbar>
 
 
 
-  <!--<paper-card image="bower_components/paper-card/demo/donuts.png">
-  <div class="card-content">
-    <div class="cafe-header">I am a Sender
-      <div class="cafe-location cafe-light">
-        <iron-icon icon="communication:location-on"></iron-icon>
-        <span>250ft</span>
-      </div>
-    </div>
-    <div class="cafe-rating">
-      <iron-icon class="star" icon="star"></iron-icon>
-      <iron-icon class="star" icon="star"></iron-icon>
-      <iron-icon class="star" icon="star"></iron-icon>
-      <iron-icon class="star" icon="star"></iron-icon>
-      <iron-icon class="star" icon="star"></iron-icon>
-    </div>
-    <p>$・Italian, Cafe</p>
-    <p class="cafe-light">Small plates, salads &amp; sandwiches in an intimate setting.</p>
-  </div>
-  <div class="card-actions">
-    <div class="horizontal justified">
-      <paper-icon-button icon="icons:event"></paper-icon-button>
-      <paper-button>5:30PM</paper-button>
-      <paper-button>7:30PM</paper-button>
-      <paper-button>9:00PM</paper-button>
-      <paper-button class="cafe-reserve">Reserve</paper-button>
-    </div>
-  </div>
-</paper-card>-->
+  
 <div>
 <paper-card heading="I am a Sender" image="bower_components/paper-card/demo/travel.jpg" alt="Sender">
  <!--  <div class="card-content">I am a sender !</div> -->
