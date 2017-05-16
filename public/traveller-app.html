@@ -12,7 +12,7 @@
 <link rel="import" href="bower_components/paper-button/paper-button.html">
 <link rel="import" href="bower_components/iron-image/iron-image.html">
 
-<dom-module id="sender-app">
+<dom-module id="traveller-app">
 
   <template>
     <style is="custom-style">
@@ -73,7 +73,7 @@ form paper-button {
 }
 
     </style>
-    <import src="sender.html"/>
+    <import src="traveler.html"/>
     <form method="POST" id="senderForm">
         <fieldset name="city">
 		      <label for="city">City Of Origin</label>
@@ -81,27 +81,14 @@ form paper-button {
 		    </fieldset>
 
 		   	<fieldset name="destn">
-		      <label for="destn">Destination</label>
+		      <label for="destn">Destination City</label>
 		      <input type="text" name="destn"  id="destn" placeholder="Destination">
 		    </fieldset>
 
-            	<fieldset name="item">
-		      <label for="item">Item-Type</label>
-		      <input type="text" name="item"  id="item" placeholder="Item Type">
-		    </fieldset>
-
             	<fieldset name="Weight">
-		      <label for="wght">Weight Of the Item</label>
+		      <label for="wght">Weight you're willing to carry</label>
 		      <input type="text" name="wght"  id="wght" placeholder="Weight">
             </fieldset>
-
-            	<fieldset name="dmns">
-		      <label for="dmns">Dimenstions of the item</label><br>
-		      <input type="text" name="dmns"  id="dmns" placeholder="Length"><br>
-               <input type="text" name="dmns"  id="dmns" placeholder="Breadth"><br>
-                <input type="text" name="dmns"  id="dmns" placeholder="Height"><br>
-		     
-		    </fieldset>
 
             	<br><center><font color="white" size="3" style="font-family: sans-serif;"><paper-button raised onclick="window.location='dashboard.html';" id="submit" >Submit</paper-button><br></font></center><br>
     </form>
@@ -112,7 +99,7 @@ form paper-button {
 
   <script>
     Polymer({
-      is: "sender-app",
+      is: "traveller-app",
       goLink: function (e) {
         window.location.href = e.target.getAttribute('link');
       }
