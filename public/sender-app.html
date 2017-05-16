@@ -1,0 +1,121 @@
+<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
+<!--<script src="../webcomponentsjs/webcomponents-lite.min.js"></script>-->
+<link rel="import" href="bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="bower_components/paper-menu/paper-menu.html">
+<link rel="import" href="bower_components/paper-item/paper-item.html">
+<link rel="import" href="bower_components/paper-card/paper-card.html">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
+<link rel="import" href="bower_components/iron-image/iron-image.html">
+
+<dom-module id="sender-app">
+
+  <template>
+    <style is="custom-style">
+      :host {
+    display: block;
+    position: relative;
+    background-color: #2a363b;
+    padding: 5px;
+    width: 100%;
+}
+
+form {
+	width: 25%;
+	margin-left: 35%;
+	margin-top: 10%;
+	border: solid thin #e8485f;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 0px 0 10px #e8485f;
+	display: inline-block;
+}
+
+form label {
+    color: #e8485f;
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 150px;
+    display: inline-block;
+}
+
+form fieldset {
+	border: none;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+form label {
+    font-family: sans-serif;
+    font-size: 0.5cm;
+    margin-right: 9%;
+    margin-bottom: 2.5%;
+}
+
+form fieldset input[type='text'] {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 5px 5px;
+	font-size: 0.9em;
+}
+
+form fieldset input[name="dmns"] {
+    margin : 3%;
+}
+
+form paper-button {
+    background: #e8485f;
+}
+
+    </style>
+    <import src="sender.html"/>
+    <form method="POST" id="senderForm">
+        <fieldset name="city">
+		      <label for="city">City Of Origin</label>
+		      <input type="text" name="city" id="city" placeholder="city">
+		    </fieldset>
+
+		   	<fieldset name="destn">
+		      <label for="destn">Destination</label>
+		      <input type="text" name="destn"  id="destn" placeholder="Destination">
+		    </fieldset>
+
+            	<fieldset name="item">
+		      <label for="item">Item-Type</label>
+		      <input type="text" name="item"  id="item" placeholder="Item Type">
+		    </fieldset>
+
+            	<fieldset name="Weight">
+		      <label for="wght">Weight Of the Item</label>
+		      <input type="text" name="wght"  id="wght" placeholder="Weight">
+            </fieldset>
+
+            	<fieldset name="dmns">
+		      <label for="dmns">Dimenstions of the item</label><br>
+		      <input type="text" name="dmns"  id="dmns" placeholder="Length"><br>
+               <input type="text" name="dmns"  id="dmns" placeholder="Breadth"><br>
+                <input type="text" name="dmns"  id="dmns" placeholder="Height"><br>
+		     
+		    </fieldset>
+
+            	<br><center><font color="white" size="3" style="font-family: sans-serif;"><paper-button raised onclick="window.location='dashboard.html';" id="submit" >Submit</paper-button><br></font></center><br>
+    </form>
+
+  </template>
+
+
+
+  <script>
+    Polymer({
+      is: "sender-app",
+      goLink: function (e) {
+        window.location.href = e.target.getAttribute('link');
+      }
+    });
+  </script>>
+</dom-module>
