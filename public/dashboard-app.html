@@ -11,7 +11,7 @@
 <link rel="import" href="bower_components/paper-card/paper-card.html">
 <link rel="import" href="bower_components/paper-button/paper-button.html">
 <link rel="import" href="bower_components/iron-image/iron-image.html">
-
+<link rel="stylesheet" href="stylesheets/style.css"
 <dom-module id="dashboard-app">
 
   <template>
@@ -67,7 +67,7 @@
     --iron-image-width: 100%;
   }
     </style>
-<div>
+<!--<div>
 <paper-card heading="I am a Sender" image="bower_components/paper-card/demo/house.png" alt="Sender">
   <div class="card-content">Do you want to send something to a friend or a relative living in another city?</div>
   <div class="card-actions">
@@ -89,8 +89,7 @@
     <paper-button raised onclick="window.location='history.html';">Click here!</paper-button>
   </div>
 </paper-card>
-</div>
-
+</div>-->
   </template>
 
 
@@ -102,5 +101,6 @@
         window.location.href = e.target.getAttribute('link');
       }
     });
+
   </script>>
 </dom-module>
