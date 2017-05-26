@@ -77,7 +77,7 @@
 
   <form is="iron-form" id="registerform">
     <paper-input id="name" name="name" label="Name" required></paper-input>
-    <paper-date-picker-item icon="icons:today" date="{{date}}" date-format="ll"></paper-date-picker-item>
+    <paper-date-picker-item style="color:white;" icon="icons:today" date="{{date}}" date-format="ll"></paper-date-picker-item>
     <!--<paper-dropdown-menu name="gender" label="Gender">
       <paper-listbox class="dropdown-content" selected="1">
         <paper-item>Female</paper-item>
@@ -90,10 +90,10 @@
     <paper-input name="Email-id" label="Email-id" required></paper-input>
     <paper-input name="password" label="Password" type="password" required></paper-input>
     <paper-input name="confirmpassword" label="Confirm-Password" type="password" required></paper-input>
-    <paper-checkbox name="read" required>I Agree with the terms and condition</paper-checkbox><br>
+    <paper-checkbox name="read" required ><p style="color:white;">I Agree with the terms and conditions</p></paper-checkbox><br>
 
     <paper-button onclick="window.location='dashboard.html';" id="submitbutton">Submit</paper-button><br>
-    <google-signin></google-signin>
+   <center> <google-signin style="margin-top:2%;"></google-signin></center>
   </form>
 </body>
 <script >
